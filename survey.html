@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style_survey.css">
+    <title>Survey Page</title>
+</head>
+<body>
+    <div class="head">
+        <h1 id="title" >RELOARHUB SOLUTIONS</h1>
+        <p id="description">Kindly fill the feedback form</p>
+    </div>
+
+<!-- form -->
+    <form id="survey-form"    action="">
+        <fieldset>
+        <div class="personal">
+            <label for="name" id="name-label">Name: <span><i>*required</i></span></label>
+            <input type="text" id="name" value=""  placeholder="Enter your name here" required><br><br>
+
+            <label for="email" id="email-label">Email Address: <span><i>*required</i></span></label>
+            <input type="email" id="email" placeholder="Enter your Email Address here" required><br><br>
+
+            <label for="number" id="number-label">Phone Number:</label>
+            <input type="number" id="number" value="number" placeholder="Enter phone number" min="10" max="99">
+        </div>
+    </fieldset>
+        <!-- Drop down menu -->
+        <fieldset class="color1">
+            <div class="rate">
+                <h3>Please rate our services</h3>
+                <select name="feedback" id="dropdown">
+                    <option value="5">Excellent</option>
+                    <option value="4">Very good</option>
+                    <option value="3">Good</option>
+                    <option value="2">Fair</option>
+                    <option value="1">Poor</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <!-- Radio buttons -->
+        <fieldset class="color2">
+            <div class="services">
+                <h3>Which of our services did you make use of?</h3>
+                <div class="serv">
+                    <input type="radio" name="services" id="website" value="website-development" checked>
+                    <label for="website">Website Development</label>
+                </div>
+
+                <div class="serv">
+                    <input type="radio" name="services" id="mobile" value="mobile-development">
+                    <label for="mobile">Mobile Development</label>
+                </div>
+
+                <div class="serv">
+                    <input type="radio" name="services" id="mobile" value="website-hosting">
+                    <label for="mobile"> Website Hosting</label>
+                </div>
+
+                <div class="serv">
+                    <input type="radio" name="services" id="project-management" value="project-management">
+                    <label for="project-management">Project Management</label>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Checkboxes -->
+        <fieldset class="color3">
+            <div class="access">
+                <h3>Which platform will you love to access us from?</h3>
+                <p><i>(You can pick more than one)</i></p>
+                <input type="checkbox" value="facebook" id="facebook" checked>
+                <label for="facebook">Facebook</label><br><br>
+
+                <input type="checkbox" value="twitter" id="twitter">
+                <label for="twitter">Twitter</label><br><br>
+
+                <input type="checkbox" value="whatsapp" id="whatsapp">
+                <label for="whatsapp">Whatsapp</label><br><br>
+
+                <input type="checkbox" value="instagram" id="instagram">
+                <label for="instagram">Instagram</label><br><br>
+
+                <input type="checkbox" value="youtube" id="youtube">
+                <label for="youtube">Youtube</label><br><br>
+
+                <input type="checkbox" value="website" id="website">
+                <label for="website">Website</label><br><br>
+            </div>
+        </fieldset>
+
+        <!-- Textarea -->
+        <fieldset class="color4">
+            <div class="access">
+                <h3>Ways to serve you better?</h3>
+                <textarea name="message" id="message" placeholder="Enter your message here" cols="30" rows="10"></textarea><br><br>
+            </div>
+        </fieldset>
+
+        <!-- Submit -->
+        <div>
+            <input type="submit" id="submit" value="Send">
+        </div>
+        <button class="refer"><a href="index.html">Home</a></button>
+    </form>
+</body>
+</html> 

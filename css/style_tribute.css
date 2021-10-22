@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+html, 
+body {
+    background: #eee;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5em;
+    font-size:16px;
+    font-weight:300px;
+}
+
+.refer a {
+    position:fixed;
+    top:0px;
+    background:#000;
+    color:white;
+    text-decoration:none;
+    padding:15px 2.5px 15px 5px;
+    border:none;
+    border-radius:3px;
+}
+
+.refer a:hover{
+    background: steelblue;
+   transition: 1s ease-in-out;
+}
+
+#title {
+    /* margin:50px; */
+    text-align:center;
+    padding:10px;
+    background:white;
+    color:black;
+    width:100vw;
+    height:15vh;
+    padding:40px;
+}
+
+#title p {
+    margin-top:20px;
+}
+
+#tribute-info {
+    text-align:justify;
+    
+    padding:20px 250px 0px 250px;
+}
+
+#tribute-info li {
+    list-style:none;
+    margin:10px 10px 0px 10px;
+}
+
+.quote{
+   margin-bottom: 15px;
+   padding:50px;
+}
+
+.link {
+    margin-bottom: 25px;
+    padding: 0px 200px 60px 200px;
+}
+
+.link a {
+    text-decoration: none;
+}
+
+.link a:hover {
+    padding: 25px;
+    cursor:pointer;
+    color: blue;
+}
+
+
+#img-div{
+    margin:10px;
+    padding:40px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#image {
+    max-width:100%; 
+}
+
+#img-caption{
+    font-size:18px;
+    width:80%;
+
+}
+
+@media(max-width:768px) {
+    #title {
+        /* margin:50px 10px; */
+        text-align:center;
+        padding:30px;
+        background:black;
+        color:white;
+        width:100%;
+    }
+
+    #tribute-info {
+        text-align:justify;
+        margin:20px;
+        padding:10px 80px 10px 80px;
+    }
+
+    .quote{
+       margin-top: 5px;
+       padding:10px;
+       text-align: start;;
+    }
+
+    .link {
+        margin-bottom: 25px;
+        padding: 0px 30px 15px 30px;
+    }
+
+    .refer a {
+        position:fixed;
+        top:0px;
+        background:#eee;
+        color:black;
+        text-decoration:none;
+        padding:15px 5px 15px 5px;
+        border:none;
+        border-radius:3px;
+    }
+    
+    .refer a:hover{
+        background: steelblue;
+       transition: 1s ease-in-out;
+    }
+
+    #img-div{
+        margin:10px;
+        padding:20px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #image {
+        width:90%;
+    }
+    
+    #img-caption{
+        font-size:18px;
+        width:90%;
+    
+    }
+}

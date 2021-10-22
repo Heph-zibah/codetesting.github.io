@@ -1,0 +1,196 @@
+/* utilities */
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+html,
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url(../img/photo1.jpg) no-repeat center center /  cover;
+    opacity:0.9;
+    color:rgb(255, 255, 255);
+}
+
+fieldset {
+    border:3px solid steelblue;
+    border-radius: 3px;
+    padding:1px;
+    margin: 10px 300px 30px 300px;
+}
+
+fieldset:hover {
+    background:green;
+    transition:all 1s ease;
+}
+
+.refer a {
+    position:fixed;
+    top:0px;
+    background:green;
+    color:white;
+    text-decoration:none;
+    padding:15px 2.5px 15px 5px;
+    border:none;
+    border-radius:3px;
+}
+
+.refer a:hover{
+    background: steelblue;
+   transition: 1s ease-in-out;
+}
+
+/* Title */
+.head {
+    text-align:center;
+    margin: 50px 0px 40px 0px;
+    padding:5px;
+    font-weight: 600;
+    line-height: 2.5em;
+}
+
+/* Form */
+.personal {
+    text-align: center;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin:20px 10px 30px 10px;
+    
+}
+
+.personal input {
+    height:40px;
+    width:50%;
+    border:2px solid black;
+    border-radius:3px;
+}
+
+
+/* Dropdown */
+.color1 {
+    border: 3px solid greenyellow;
+}
+
+.rate {
+    margin-bottom: 10px;
+    text-align: center;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin:20px 10px 30px 10px;
+}
+
+.rate select {
+    margin:30px;
+    height:40px;
+    width:50%;
+}
+
+/*Radio */
+.services {
+    text-align: center;
+}
+
+.services h3 {
+    margin: 10px;
+}
+
+.services .serv {
+    margin-bottom: 10px;
+}
+
+.color2 {
+    border: 3px solid blue;
+}
+
+/* checkboxes */
+.access {
+    text-align: center;
+    
+}
+
+#facebook {
+    margin-top: 15px;
+}
+
+.color3 {
+    border: 3px solid green;
+}
+
+/* textarea */
+textarea {
+    margin:20px 0px 10px 0px;
+    border: 3px solid green;
+    border-radius: 5px;
+    
+    color:black;
+}
+
+.color4 {
+    border-top: 3px solid steelblue;
+    border-right: 3px solid yellowgreen;
+    border-bottom: 3px solid blue;
+    border-left: 3px solid green;
+}
+
+/* submit */
+#submit {
+    margin-bottom: 15px;
+    background:darkblue;
+    color:white;
+    padding:20px;
+    border: none;
+    border-radius: 2px;
+    margin-left:650px;
+}
+
+#submit:hover {
+    cursor:pointer;
+   
+    background: yellowgreen;
+    color:black;
+}
+
+/* media query */
+@media(max-width:768px) {
+    fieldset {
+        border:3px solid steelblue;
+        padding:1px;
+        margin: 10px 40px 30px 40px;
+    }
+
+    fieldset:hover {
+        background:green;
+        transition:all 1s ease;
+    }
+
+    #submit {
+        margin-bottom: 15px;
+        background:darkblue;
+        color:white;
+        padding:20px;
+        border: none;
+        border-radius: 2px;
+        margin-left: 250px;
+    }
+
+    .refer a {
+        position:fixed;
+        top:0px;
+        background:green;
+        color:white;
+        text-decoration:none;
+        padding:15px 2.5px 15px 5px;
+        border:none;
+        border-radius:3px;
+    }
+
+    .refer a:hover{
+        background: steelblue;
+       transition: 1s ease-in-out;
+    }
+}
